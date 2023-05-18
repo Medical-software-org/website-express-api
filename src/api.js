@@ -1,18 +1,12 @@
 const express = require("express");
 const serverless = require("serverless-http");
+const emailListRouter = require("./routes/email-list-routes");
+
+// todo: make request to firbase, secure firebase
 
 const app = express();
 
-const router = express.Router();
-
-router.get("/", (req, res) => {
-  res.json({
-    hello: "hi!",
-  });
-});
-
-// Use the router to handle requests to the `/.netlify/functions/api` path
-app.use(`/.netlify/functions/api`, router);
+app.use("/.netlify/functions/api", emailListRouter);
 
 // Export the app and the serverless function
 module.exports = app;
