@@ -1,6 +1,6 @@
 const express = require("express");
 const { emailListSignUp } = require("./validation-shemas");
-const admin = require("../../firebase-config");
+const admin = require("../../config/firebase-config");
 
 const router = express.Router();
 
