@@ -6,6 +6,6 @@
 
 
 [[redirects]]
-  from = “/*”
+  from = “/api”
   to = “https://benevolent-faloodeh-31bf10.netlify.app/.netlify/functions/api/”
   status = 200
