@@ -4,7 +4,6 @@
 [dev]
   publish = "public"
 
-
 [[redirects]]
   from = “/api”
   to = “https://benevolent-faloodeh-31bf10.netlify.app/.netlify/functions/api/”
