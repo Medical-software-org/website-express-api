@@ -5,7 +5,7 @@
   publish = "public"
 
 [[redirects]]
-  from = "/api"
+  from = "/*"
   to = "https://benevolent-faloodeh-31bf10.netlify.app/.netlify/functions/api/"
   status = 200
   force = true
