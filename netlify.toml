@@ -4,13 +4,11 @@
 [dev]
   publish = "public"
 
+[functions]
+  external_node_modules = ["express"]
+  node_bundler = "esbuild"
 [[redirects]]
-  from = "/*"
-  to = "https://benevolent-faloodeh-31bf10.netlify.app/.netlify/functions/api/"
-  status = 200
   force = true
-  headers = {X-From = "Netlify"}
-[[headers]]
-  for = "/*"
-  [headers.values]
-    Access-Control-Allow-Origin = "*"
+  from = "/api/*"
+  status = 200
+  to = "/.netlify/functions/api/:splat"
